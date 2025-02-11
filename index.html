@@ -1,12 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
+
+<header>
+    ROCK PAPER SCISSORS
+</header>
+
 <body>
-    
+    <div id="results">
+        <p>Choose your weapon</p>
+        <p>First one to score 5 wins the game</p>
+    </div>
+    <div id="score">
+        <p>Player</p>
+        <p id="player-score">0</p>
+        <p>Computer</p>
+        <p id="computer-score">0</p>
+    </div>
+    <div id="buttons">
+        <button id="rock">
+            <img src="images/rock.png" alt="Rock">
+        </button>
+        <button id="paper">
+            <img src="images/paper.png" alt="Paper">
+        </button>
+        <button id="scissors">
+            <img src="images/scissors.png" alt="Scissors">
+        </button>
+    </div>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span id="closeModal" class="close">&times;</span>
+            <p id="modal-text"></p>
+        </div>
+    </div>
 </body>
+
 </html>
